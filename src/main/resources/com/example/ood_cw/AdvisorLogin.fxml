@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="AdvisorLoginAnchor" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ood_cw.HelloController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/BackGround2.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="222.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email  :" wrappingWidth="81.33673095703125">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="214.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password :" wrappingWidth="88.00000000000011">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="AdvisorLoginEmailID" layoutX="335.0" layoutY="160.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter Your Email Name">
+         <font>
+            <Font size="16.0" />
+         </font></TextField>
+      <Button fx:id="AdvisorLoginButtonID" layoutX="389.0" layoutY="285.0" mnemonicParsing="false" onAction="#AdvisorLoginButtonClick" prefHeight="46.0" prefWidth="133.0" style="-fx-background-radius: 30 30 30 30; -fx-border-color: red; -fx-border-radius: 30 30 30 30;" text="Log In">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Text fill="#b9afaf" layoutX="222.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't have an account?" wrappingWidth="195.20003662109366">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Button fx:id="AdvisorLoginPageSignUpId" layoutX="397.0" layoutY="423.0" mnemonicParsing="false" onAction="#AdvisorLoginPageSignUpButtonClick" prefHeight="45.0" prefWidth="105.0" style="-fx-background-radius: 30 30 30 30; -fx-border-color: red; -fx-border-radius: 30 30 30 30;" text="Sign Up">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Button fx:id="AdvisorLoginBackID" alignment="BASELINE_LEFT" layoutY="30.0" mnemonicParsing="false" onAction="#AdvisorLoginBackButtonClick" prefHeight="60.0" prefWidth="105.0" style="-fx-background-radius: 0 60 60 0; -fx-border-color: red; -fx-border-radius: 0 60 60 0;" text="BACK">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow />
+         </effect></Button>
+      <PasswordField fx:id="AdvisorLoginPasswordID" layoutX="335.0" layoutY="218.0" prefHeight="40.0" prefWidth="250.0" promptText="Enter Your Password">
+         <font>
+            <Font size="16.0" />
+         </font></PasswordField>
+      <Label fx:id="AdvisorLoginEmailAlert" layoutX="603.0" layoutY="165.0" prefHeight="27.0" prefWidth="178.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="AdvisorLoginPasswordAlert" layoutX="603.0" layoutY="225.0" prefHeight="26.0" prefWidth="226.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
